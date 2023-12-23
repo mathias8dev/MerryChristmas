@@ -15,5 +15,7 @@ Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-mu
 
 
 
-https://github.com/mathias8dev/MerryChristmas/assets/96143767/95e6062e-9a34-482f-9b23-2d81a7abf866
+https://github.com/mathias8dev/MerryChristmas/assets/96143767/9714a94c-0286-44e7-9f73-70016921ebb2
+
+
 
