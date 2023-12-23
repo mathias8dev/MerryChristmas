@@ -1,24 +1,20 @@
 package com.mathias8dev.christmas
 
-import App
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.core.view.WindowCompat
+import com.mathias8dev.christmas.ui.composables.TransparentSystemBars
+import com.mathias8dev.christmas.ui.screens.ChristmasScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        WindowCompat.setDecorFitsSystemWindows(window, false)
         setContent {
-            App()
+            TransparentSystemBars(darkIcons = false)
+            ChristmasScreen()
         }
     }
 }
 
-@Preview
-@Composable
-fun AppAndroidPreview() {
-    App()
-}

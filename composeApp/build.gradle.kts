@@ -35,17 +35,33 @@ kotlin {
         androidMain.dependencies {
             implementation(libs.compose.ui.tooling.preview)
             implementation(libs.androidx.activity.compose)
+            implementation ("com.airbnb.android:lottie-compose:6.2.0")
+            // Accompanist
+            implementation("com.google.accompanist:accompanist-systemuicontroller:0.30.1")
+            // Custom Material3 AlertDialog
+            implementation("androidx.compose.material3:material3:1.1.2")
+
+            // Exoplayer
+            implementation("androidx.media3:media3-exoplayer:1.2.0")
+            implementation("androidx.media3:media3-exoplayer-dash:1.2.0")
+            implementation("androidx.media3:media3-ui:1.2.0")
+
+
         }
         commonMain.dependencies {
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.material)
             implementation(compose.ui)
+
+            // Nappier
+            implementation("io.github.aakira:napier:2.6.1")
             @OptIn(ExperimentalComposeLibrary::class)
             implementation(compose.components.resources)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
+            implementation("uk.co.caprica:vlcj:4.7.0")
         }
     }
 }
@@ -83,6 +99,7 @@ android {
         debugImplementation(libs.compose.ui.tooling)
     }
 }
+
 
 compose.desktop {
     application {

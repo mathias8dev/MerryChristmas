@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        
+        {
+            "name": "MerryChristmas [:composeApp:run]",
+            "type": "gradle",
+            "workingDir": "C:\\Users\\pret\\Documents\\Code\\Projects\\MerryChristmas",
+            "tasks": [":composeApp:run"],
+            "args": [""],
+            "initScripts": {
+                "flmapper": "ext.mapPath = { path -> null }"
+            }
+        }
+    ]
+}
